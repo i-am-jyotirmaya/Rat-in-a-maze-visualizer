@@ -1,0 +1,7 @@
+@import "../../styles/constants";
+
+.maze {
+    display: flex;
+    width: calc($cell-unit-size * attr(data-maze-width, 10));
+    height: calc($cell-unit-size * attr(data-maze-height, 10));
+}

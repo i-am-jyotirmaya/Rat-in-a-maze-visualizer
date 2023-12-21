@@ -1,0 +1,10 @@
+@import '../../styles/constants';
+
+.cell {
+    height: $cell-unit-size;
+    width: $cell-unit-size;
+
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+}
