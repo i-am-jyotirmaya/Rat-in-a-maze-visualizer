@@ -1,0 +1,37 @@
+@import "../../styles/base";
+
+.maze-builder-section {
+    padding: 0 5rem;
+    padding-top: 5rem;
+
+    .no-maze-message {
+
+        p:nth-child(1) {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        p:nth-child(2) {
+            font-style: italic;
+            margin-top: 0;
+
+            .action {
+                font-size: 1.1em;
+                font-weight: 600;
+                color: $primary-dark;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .maze-list {
+        .title {
+            font-size: 2rem;
+            margin: 3rem 0 0 0;
+            padding: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            text-decoration: overline;
+        }
+    }
+}

@@ -2,11 +2,12 @@
 
 import "./Button.scss";
 
-type ButtonProps = {
-  children: React.ReactNode;
-  icon: any;
-};
-
-export const Button: React.FC<ButtonProps> = ({ children }) => {
-  return <button className="btn primary">Build new</button>;
+export const Button: React.FC<
+  React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+> = ({ children, ...props }) => {
+  return (
+    <button {...props} className="btn primary">
+      {children}
+    </button>
+  );
 };

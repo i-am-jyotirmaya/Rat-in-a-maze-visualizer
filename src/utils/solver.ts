@@ -48,16 +48,17 @@ export const createSolver = (
       return true;
     }
     fail(x, y);
-    if (await backtrack(x, y - 1)) {
-      success(x, y);
-      return true;
-    }
-    fail(x, y);
     if (await backtrack(x, y + 1)) {
       success(x, y);
       return true;
     }
     fail(x, y);
+    if (await backtrack(x, y - 1)) {
+      success(x, y);
+      return true;
+    }
+    fail(x, y);
+
     if (await backtrack(x + 1, y)) {
       success(x, y);
       return true;

@@ -1,4 +1,4 @@
-import { Cell } from "../cell/Cell";
+import { Cell } from "../../components/cell/Cell";
 import { mazeData } from "../../data/data";
 import "./Maze.scss";
 import { MouseEventHandler, useCallback, useState } from "react";

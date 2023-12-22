@@ -4,7 +4,7 @@ import "./Playground.scss";
 export const Playground: React.FC = (): JSX.Element => {
   return (
     <div className="playground-root">
-      <Button />
+      <Button>Click here</Button>
     </div>
   );
 };
